@@ -1,6 +1,7 @@
 import './App.css';
 import MyHeader from './MyHeader';
 import MyFooter from './MyFooter';
+import Counter from './counter';
 
 function App() {
   let name = "조연서"
@@ -8,9 +9,7 @@ function App() {
   return (
     <div className="App">
       <MyHeader/>
-          <h2>Hello {name} It's React :)</h2>
-          <b id="bold_text">React.js</b>
-      <MyFooter/>
+      <Counter />
     </div>
   );
 }
