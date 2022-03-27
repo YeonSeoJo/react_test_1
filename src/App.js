@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import MyHeader from './MyHeader';
+import MyFooter from './MyFooter';
 
 function App() {
+  let name = "조연서"
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          <h2>Hello React :)</h2>
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React ok?!
-        </a>
-      </header>
+      <MyHeader/>
+          <h2>Hello {name} It's React :)</h2>
+          <b id="bold_text">React.js</b>
+      <MyFooter/>
     </div>
   );
 }
