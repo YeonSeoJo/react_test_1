@@ -1,16 +1,27 @@
 import './App.css';
 import MyHeader from './MyHeader';
 import MyFooter from './MyFooter';
-import Counter from './counter';
+import Counter from './Counter.js';
+import OddEvenResult from './OddEvenResult';
+import Container from './Container';
+
 
 function App() {
-  let name = "조연서"
-
+  
+  const conuterProps = {
+    a : 1,
+    b : 2,
+    c : 3,
+    initialValue: 2
+  }
   return (
+    <Container>
     <div className="App">
-      <MyHeader/>
-      <Counter />
+      <MyHeader />
+      <Counter {...conuterProps}/>
+      <OddEvenResult />
     </div>
+    </Container>
   );
 }
 
